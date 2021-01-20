@@ -2,20 +2,14 @@ const express = require('express');
 
 const config = require ('./config/app')
 
+const router = require('./router')
+
 const app= express()
 
-app.get('/home',(req,res) =>{
-    return res.send('Home screen')
- } )
-
-app.get('/login',(req,res) =>{
-   return res.send('login Screen works now')
-} )
+app.use(router)
 
 const port= config.addPort
 
 app.listen(port, () => {
     console.log("Server listening on port " + port)
 })
-
-console.log('Hello World')
