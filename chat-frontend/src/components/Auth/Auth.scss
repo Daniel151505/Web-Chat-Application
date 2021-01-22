@@ -27,6 +27,13 @@
                 background-color: $bg-light;
                 border-top-left-radius: 20px;
                 border-bottom-left-radius: 20px;
+                border-bottom-left-radius: 0;
+
+                @media (min-width:800px){
+                    border-top-right-radius:0;
+                    border-bottom-left-radius:20px;
+                }
+
                 img {
                     max-height: 300px;
                     min-width: 100%;
