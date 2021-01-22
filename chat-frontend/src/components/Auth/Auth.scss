@@ -1,0 +1,12 @@
+@import '../../assets//scss/_variable.scss';
+
+#auth-container{
+    min-height : 100vh;
+    background-color: $bg-main;
+
+
+    #auth-card {
+        display:flex;
+        justify-content: center;
+    }
+}
