@@ -41,7 +41,11 @@
             }
 
             #form-section {
-                min-width: 300px;
+                min-width: 100%;
+                
+                @media (min-width:800px){
+                    min-width: 300px;
+                }
 
                 h2{
                     text-align: center;
